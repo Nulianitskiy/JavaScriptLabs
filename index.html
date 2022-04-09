@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Labs!</title>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Задания по JavaScript. Вариант 15</h1>
+    <button class="accordion">Задание 1. Дата и время</button>
+    <div class="panel">
+        <p class="data_things">Место для вашей даты...</p>
+    </div>
+
+    <button class="accordion">Задание 2. Календарь</button>
+    <div class="panel">
+        <div id="month-calendar">
+
+            <ul class="month">
+                <li class="prev"><i class="fas fa-angle-left"></i></li>
+                <li class="next"><i class="fas fa-angle-right"></i></li>
+                <li class="month-name"></li>
+                <li class="year-name"></li>
+            </ul>
+        
+            <ul class="weekdays">
+                <li class = "weekday">Пн</li>
+                <li class = "weekday">Вт</li>
+                <li class = "weekday">Ср</li>
+                <li class = "weekday">Чт</li>
+                <li class = "weekday">Пт</li>
+                <li class = "holidays">Сб</li>
+                <li class = "holidays">Вс</li>
+            </ul>
+        
+            <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>...</li>
+                <li>31</li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">Задание 3. DOM. Посчитать количество пробельных узлов</button>
+    <div class="panel">
+        <p class="dom_element">Не работает!</p>
+    </div>
+    <button class="accordion">Задание 4. Каждую секунду отображать картинку в случайном блоке</button>
+    <div class="panel">
+        <div class="rnd__block">
+            <div class="rnd__img1">
+                
+            </div>
+            <div class="rnd__img2">
+                
+            </div>
+            <div class="rnd__img3">
+                
+            </div>
+            <div class="rnd__img4">
+                
+            </div>
+        </div>
+    </div>
+    <button class="accordion">Section 5</button>
+    <div class="panel">
+        <li class="inner__list">
+
+        </li>
+    </div>
+    <button class="accordion">Задание 6. Передвижение квадрата</button>
+    <div class="panel">
+        <div class="ball__screen">
+            <p>Ну вообще, этот квадрат должен был летать в этой области, но что-то пошло не так....
+            </p>
+            <div id="foo" class="ball"></div>
+        </div>
+    </div>
+    <button class="accordion">Задание 7. Создать выпадающий список</button>
+    <div class="panel">
+        <ul class="sweet__list" id="sweet__list">
+            <li>Список Сладостей
+                <ul>
+                <li>Сладости
+                <ul>
+                    <li>Конфеты
+                    <ul>
+                        <li>Мармелад</li>
+                        <li>Батончики</li>
+                        <li>Ассорти</li>
+                        <li>Карамель</li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+            
+                <li>Выпечка
+                <ul>
+                    <li>Торты
+                    <ul>
+                        <li>Трюфельный</li>
+                        <li>Наполеон</li>
+                        <li>Птичье молоко</li>
+                        <li>Павлова</li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+            
+                <li>Напитки
+                <ul>
+                    <li>Соки
+                    <ul>
+                        <li>Апельсиновый</li>
+                        <li>Яблочный</li>
+                        <li>Персиковый</li>
+                        <li>Томатный</li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>Сладостей больше нет!</li>
+          </ul>
+    </div>
+
+    <button class="accordion">Задание 8. Картинка постепенно появляется и пропадает, а за ней текст</button>
+    <div class="panel">
+        <div >
+            <img id="smooth" src="./pictures/FlipFlap.jpg">
+            <p class="true__life">Так и живем</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="./scripts/AccordionScript.js"></script>
+    <script src="./scripts/DataThingScript.js"></script>
+    <script src="./scripts/CalendarScript.js"></script>
+    <script src="./scripts/DOMScript.js"></script> 
+    <script src="./scripts/RndShowScript.js"></script>
+    <script src="./scripts/SweetListScript.js"></script>
+    <script src="./scripts/SquareMovingScript.js"></script>
+    <script src="./scripts/SmoothImgScript.js"></script>
+</body>
+</html>
