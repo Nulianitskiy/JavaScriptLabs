@@ -44,6 +44,14 @@
     justify-content: center;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
 /*ЗАДАНИЕ 2*/
 
 
@@ -257,23 +265,6 @@ ul li {
     animation: showBlock 2s linear forwards;
   }
 
-  @keyframes showBlock {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .hide::before {
-    content: "+";
-  }
-  
-  .show::before {
-    content: "-";
-  }
-
   /* Задание 8*/
 
   .hidden {
@@ -285,6 +276,7 @@ ul li {
   .hidden:hover{
     opacity: 0;
   }
+
   @keyframes hideBlock {
     100% {
       opacity: 0;
@@ -293,7 +285,27 @@ ul li {
       opacity: 1;
     }
   }
+  .shown{
+    animation: showBlock 10s linear forwards;
+  }
+  .shown:hover{
+    opacity: 0;
+  }
 
   .true__life{
-      
+    color:rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*ДА КАК МНЕ СДЕЛАТЬ ЭТОТ ТЕКСТ ПО СЕРЕДИНЕ ТО, А???*/
   }
+
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>JS Labs!</title>
+    <script defer src="./scripts/jquery-3.6.0.slim.min.js"></script>
+    <title>JavaScriptLabs</title>
 
     <title>Document</title>
 </head>
@@ -68,59 +69,59 @@
             </div>
         </div>
     </div>
-    <button class="accordion">Section 5</button>
-    <div class="panel">
-        <li class="inner__list">
-
-        </li>
+    <button class="accordion">Задание 5. Динамическое создание элементов списка</button>
+    <div class="panel" id="task_5">
+        <a id="switch" href="#">Добавить элемент списка</a>
     </div>
     <button class="accordion">Задание 6. Передвижение квадрата</button>
     <div class="panel">
-        <div class="ball__screen">
-            <p>Ну вообще, этот квадрат должен был летать в этой области, но что-то пошло не так....
-            </p>
-            <div id="foo" class="ball"></div>
+        <div class="container">
+            <div class="ball__screen">
+                <p>Ну вообще, этот квадрат должен был летать в этой области, но что-то пошло не так....
+                </p>
+                <div id="foo" class="ball"></div>
+            </div>
         </div>
     </div>
     <button class="accordion">Задание 7. Создать выпадающий список</button>
-    <div class="panel">
-        <ul class="sweet__list" id="sweet__list">
-            <li>Список Сладостей
+    <div class="panel" id="sweet__list_id">
+        <ul id="sweet__list">
+            <li class="del">Список Сладостей
                 <ul>
-                <li>Сладости
+                <li class="del">Сладости
                 <ul>
-                    <li>Конфеты
+                    <li class="del">Конфеты
                     <ul>
-                        <li>Мармелад</li>
-                        <li>Батончики</li>
-                        <li>Ассорти</li>
-                        <li>Карамель</li>
+                        <li class="del">Мармелад</li>
+                        <li class="del">Батончики</li>
+                        <li class="del">Ассорти</li>
+                        <li class="del">Карамель</li>
                     </ul>
                     </li>
                 </ul>
                 </li>
             
-                <li>Выпечка
+                <li class="del">Выпечка
                 <ul>
-                    <li>Торты
+                    <li class="del">Торты
                     <ul>
-                        <li>Трюфельный</li>
-                        <li>Наполеон</li>
-                        <li>Птичье молоко</li>
-                        <li>Павлова</li>
+                        <li class="del">Трюфельный</li>
+                        <li class="del">Наполеон</li>
+                        <li class="del">Птичье молоко</li>
+                        <li class="del">Павлова</li>
                     </ul>
                     </li>
                 </ul>
                 </li>
             
-                <li>Напитки
+                <li class="del">Напитки
                 <ul>
-                    <li>Соки
+                    <li class="del">Соки
                     <ul>
-                        <li>Апельсиновый</li>
-                        <li>Яблочный</li>
-                        <li>Персиковый</li>
-                        <li>Томатный</li>
+                        <li class="del">Апельсиновый</li>
+                        <li class="del">Яблочный</li>
+                        <li class="del">Персиковый</li>
+                        <li class="del">Томатный</li>
                     </ul>
                     </li>
                 </ul>
@@ -133,10 +134,39 @@
 
     <button class="accordion">Задание 8. Картинка постепенно появляется и пропадает, а за ней текст</button>
     <div class="panel">
-        <div >
+        <div class="container">
             <img id="smooth" src="./pictures/FlipFlap.jpg">
-            <p class="true__life">Так и живем</p>
+            <div id="true__life">Так и живем</div>
         </div>
+    </div>
+
+    <button class="accordion">Задание 9. Форма регистрации</button>
+    <div class="panel" >
+        <form id="form_id" method="post" action="" onsubmit="javascript:return validate('form_id','email');">
+            <fieldset>
+            <legend>
+            Анкета
+            </legend>
+            <p><input type="text" size="20" /> <small>Фамилия</small></p>
+            <p><input type="text" size="20" /> <small>Имя</small></p>
+             <p><small>Город</small></p>
+            <p> <select name="city" size="1">
+            <option value="first" value="third" selected="selected">Москва</option>
+            <option value="second">Санкт-Петербург</option>
+            <option value="third">Краснодар</option>
+            <option value="fourth">Не скажу</option>
+            <option value="fifth">Я бездомный(</option>
+            </select></p>
+            <p><input type="text" size="20" /> <small>Год рождения</small></p>
+            <p><input type="text" size="20" id="email" name="email"/> <small>E-mail</small></p>
+            <input type="radio" name="Sex" value="Мужской" /> <small>М</small><br>
+            <input type="radio" name="Sex" value="Женский" /> <small>Ж</small><br>
+            <input type="radio" name="Sex" value="Другой" /> <small>Другой</small><br>
+            <p><small>О себе</small><br>
+            <textarea name="about" id="about" cols="52" rows="16"> </textarea></p>
+            <p><input type="submit" value="Отправить" />
+            </fieldset>
+            </form>
     </div>
 
 
@@ -150,5 +180,7 @@
     <script src="./scripts/SweetListScript.js"></script>
     <script src="./scripts/SquareMovingScript.js"></script>
     <script src="./scripts/SmoothImgScript.js"></script>
+    <script src="./scripts/CreaterList.js"></script>
+    <script src="./scripts/MailCheck.js"></script>
 </body>
 </html>
