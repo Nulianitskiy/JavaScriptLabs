@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="./scripts/jquery-3.6.0.slim.min.js"></script>
-    <title>JavaScriptLabs</title>
 
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <title>JavaScriptLabs</title>
 </head>
 <body>
 
@@ -142,30 +144,59 @@
 
     <button class="accordion">Задание 9. Форма регистрации</button>
     <div class="panel" >
-        <form id="form_id" method="post" action="" onsubmit="javascript:return validate('form_id','email');">
+        <form id="form_id" method="post" action="/" onsubmit="javascript:return validate('form_id','email');">
+            <h1>Анкета</h1>
             <fieldset>
             <legend>
-            Анкета
+                <h3>Основные данные</h3>
             </legend>
-            <p><input type="text" size="20" /> <small>Фамилия</small></p>
-            <p><input type="text" size="20" /> <small>Имя</small></p>
-             <p><small>Город</small></p>
-            <p> <select name="city" size="1">
-            <option value="first" value="third" selected="selected">Москва</option>
-            <option value="second">Санкт-Петербург</option>
-            <option value="third">Краснодар</option>
-            <option value="fourth">Не скажу</option>
-            <option value="fifth">Я бездомный(</option>
-            </select></p>
-            <p><input type="text" size="20" /> <small>Год рождения</small></p>
-            <p><input type="text" size="20" id="email" name="email"/> <small>E-mail</small></p>
-            <input type="radio" name="Sex" value="Мужской" /> <small>М</small><br>
-            <input type="radio" name="Sex" value="Женский" /> <small>Ж</small><br>
-            <input type="radio" name="Sex" value="Другой" /> <small>Другой</small><br>
-            <p><small>О себе</small><br>
-            <textarea name="about" id="about" cols="52" rows="16"> </textarea></p>
-            <p><input type="submit" value="Отправить" />
+            <div  class="account-details">
+                <div><label>Фамилия</label><input type="text" size="20" name="name" required/></div>
+                <div><label>Имя</label><input type="text" size="20" name="name" required/></div>
+                <div><label>Дата рождения</label><input type="text" size="20" required/></div>
+                <div><label>Почта</label><input type="text" size="20" id="email" name="email" required/></div>
+            </div>
             </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Дополнительная информация</h3>
+                </legend>
+            <div  class="personal-details">
+                <div>
+                    <label>Город</label>
+                    <select name="city" size="1">
+                        <option value="first" selected="selected">Москва</option>
+                        <option value="second">Санкт-Петербург</option>
+                        <option value="third">Краснодар</option>
+                        <option value="fourth">Не скажу</option>
+                        <option value="fifth">Я бездомный(</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Пол</label>
+                    <div class="gender">
+                        <input type="radio" value="none" id="male" name="gender" required/>
+                        <label for="male" class="radio">Мужчина</label>
+                        <input type="radio" value="none" id="female" name="gender" required/>
+                        <label for="female" class="radio">Женщина</label>
+                    </div>
+                </div>
+                <div><label>О себе</label><textarea name="about" id="about" cols="52" rows="16"> </textarea></div>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                  <h3>Соглашение</h3>
+                </legend>
+                <div  class="terms-mailing">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox"><span>Я согласен принять <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Политика приватности.</a></span>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox"><span>Хочу получать спам 24/7</span>
+                  </div>
+              </fieldset>
+              <button type="submit" href="#">Submit</button>
             </form>
     </div>
 
