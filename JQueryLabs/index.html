@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+
+    <title>JQueryLabs</title>
+</head>
+<body>
+    <div>
+        <h1>Задания по JQuery и Ajax</h1>
+    </div>
+
+    <button class="accordion">Задание 1. Расчет идеального веса</button>
+    <div class="panel">
+        <div class="testbox">
+            <form action="/">
+              <div class="banner">
+                <h2>Расчет правильного веса</h2>
+              </div>
+              <p>Создайте форму с radiobutton для выбора пола (мужчина или женщина). Добавьте поле для ввода роста (в сантиметрах). По нажатию кнопки “Идеальный вес”, пошлите запрос на файл a3.php. На сервер передается параметр пол – имя параметра sex, значения man или woman и рост ( имя height) - рост задется с помощью ползунка range.
+                . Передача осуществляется методом AJAX, с помощью POST. 
+                Если все выполнено правильно, то будет возвращена строка с расчетом идеального веса под заданный пол. В противном случае – ошибка.
+                </p>
+              
+              <div class="item">
+                <label for="name">Рост<span>*</span></label>
+                <div class="range-wrap">
+                    <div class="range-value" id="rangeV"></div>
+                    <input id="range" type="range" min="0" max="250" value="200" step="1">
+                </div>
+            </div>
+             
+              <div class="question">
+                <label>Выберите пол</label>
+                <div class="question-answer">
+                  <div>
+                    <input type="radio" value="none" id="radio_1" name="gender"/>
+                    <label for="radio_1" class="radio"><span>Мужчина</span></label>
+                  </div>
+                  <div>
+                    <input  type="radio" value="none" id="radio_2" name="gender"/>
+                    <label for="radio_2" class="radio"><span>Женщина</span></label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="btn-block">
+                <button type="submit" href="/">Подтвердить</button>
+              </div>
+            </form>
+          </div>
+    </div>
+
+    <script src="./scripts/AccordionScript.js"></script>
+
+    <script src="./scripts/html-input-range.js"></script>
+</body>
+</html>

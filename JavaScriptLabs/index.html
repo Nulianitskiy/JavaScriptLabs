@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="./scripts/jquery-3.6.0.slim.min.js"></script>
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 
     <title>JavaScriptLabs</title>
 </head>
@@ -87,7 +88,7 @@
     </div>
     <button class="accordion">Задание 7. Создать выпадающий список</button>
     <div class="panel" id="sweet__list_id">
-        <ul id="sweet__list">
+        <ul id="del">
             <li class="del">Список Сладостей
                 <ul>
                 <li class="del">Сладости
@@ -144,17 +145,26 @@
 
     <button class="accordion">Задание 9. Форма регистрации</button>
     <div class="panel" >
-        <form id="form_id" method="post" action="/" onsubmit="javascript:return validate('form_id','email');">
+        <form id="my_form" method="post" action="#">
             <h1>Анкета</h1>
             <fieldset>
             <legend>
                 <h3>Основные данные</h3>
             </legend>
             <div  class="account-details">
-                <div><label>Фамилия</label><input type="text" size="20" name="name" required/></div>
-                <div><label>Имя</label><input type="text" size="20" name="name" required/></div>
-                <div><label>Дата рождения</label><input type="text" size="20" required/></div>
-                <div><label>Почта</label><input type="text" size="20" id="email" name="email" required/></div>
+                <div><label>Фамилия &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label><input type="text" size="20" name="username" required/></div>
+                <div><label>Имя &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" size="20" name="username" required/></div>
+                <div><label>Дата рождения </label><input type="text" size="20" name="my_date" required/></div>
+                <div><label>Почта &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" size="20" id="email" name="my_email" required/></div>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Пароль</h3>
+                </legend>
+            <div  class="account-details">
+                <div><label>Пароль &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" size="20" name="password" required/></div>
+                <div><label>Повторите пароль</label><input type="text" size="20" name="password_double" required/></div>
             </div>
             </fieldset>
             <fieldset>
@@ -202,7 +212,6 @@
 
 
 
-
     <script src="./scripts/AccordionScript.js"></script>
     <script src="./scripts/DataThingScript.js"></script>
     <script src="./scripts/CalendarScript.js"></script>
@@ -212,6 +221,6 @@
     <script src="./scripts/SquareMovingScript.js"></script>
     <script src="./scripts/SmoothImgScript.js"></script>
     <script src="./scripts/CreaterList.js"></script>
-    <script src="./scripts/MailCheck.js"></script>
+    <script src="./scripts/MyRules.js"></script>
 </body>
 </html>

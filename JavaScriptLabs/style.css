@@ -320,7 +320,7 @@ ul li {
     color: #3d5084;
     }
 .main-block {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     background: #fff;
@@ -334,17 +334,20 @@ fieldset {
     border-top: 1px solid #3d5084;
     }
 .account-details, .personal-details {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     }
 .account-details >div, .personal-details >div >div {
-    display: flex;
+    display: block;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 10px;
     }
 .account-details >div, .personal-details >div, input, label {
     width: 100%;
+    justify-content:space-around;
     }
 label {
     padding: 0 5px;
@@ -373,7 +376,8 @@ select {
     } 
 .bdate-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     }
 .birthdate select.day {
     width: 35px;
@@ -411,16 +415,19 @@ button:hover {
     }
 @media (min-width: 568px) {
     .account-details >div, .personal-details >div {
-        width: 50%;
+        width: 100%;
         }
     label {
-        width: 40%;
+        width: 20%;
         }
     input {
-        width: 60%;
+        width: 30%;
         }
     select, .children, .gender, .bdate-block {
-        width: calc(60% + 16px);
+        width: calc(30% + 16px);
         }
+}
+.error{
+    color: #e52a2a;
 }
   
