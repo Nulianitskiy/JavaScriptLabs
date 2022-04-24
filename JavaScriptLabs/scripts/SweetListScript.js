@@ -1,4 +1,5 @@
-$(".del").click(function(){ 
-  $(this).closest(".del").remove(); 
-  return false; 
+$("document").ready(function(){ 
+  $(".del").click(function(){
+    $(this).remove();
+  }); 
 });

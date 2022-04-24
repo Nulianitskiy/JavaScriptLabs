@@ -22,32 +22,29 @@
     <button class="accordion">Задание 1. Расчет идеального веса</button>
     <div class="panel">
         <div class="testbox">
-            <form action="/">
+            <form id="weight_form" action="http://myweight/a3.php" method="post">
               <div class="banner">
                 <h2>Расчет правильного веса</h2>
               </div>
-              <p>Создайте форму с radiobutton для выбора пола (мужчина или женщина). Добавьте поле для ввода роста (в сантиметрах). По нажатию кнопки “Идеальный вес”, пошлите запрос на файл a3.php. На сервер передается параметр пол – имя параметра sex, значения man или woman и рост ( имя height) - рост задется с помощью ползунка range.
-                . Передача осуществляется методом AJAX, с помощью POST. 
-                Если все выполнено правильно, то будет возвращена строка с расчетом идеального веса под заданный пол. В противном случае – ошибка.
-                </p>
+              <p>Кушать кашу очень важно</p>
               
               <div class="item">
                 <label for="name">Рост<span>*</span></label>
                 <div class="range-wrap">
                     <div class="range-value" id="rangeV"></div>
-                    <input id="range" type="range" min="0" max="250" value="200" step="1">
+                    <input name="weight" id="range" type="range" min="0" max="250" value="200" step="1">
                 </div>
-            </div>
+              </div>
              
               <div class="question">
                 <label>Выберите пол</label>
                 <div class="question-answer">
                   <div>
-                    <input type="radio" value="none" id="radio_1" name="gender"/>
+                    <input type="radio" value="male" id="radio_1" name="sex"/>
                     <label for="radio_1" class="radio"><span>Мужчина</span></label>
                   </div>
                   <div>
-                    <input  type="radio" value="none" id="radio_2" name="gender"/>
+                    <input  type="radio" value="female" id="radio_2" name="sex"/>
                     <label for="radio_2" class="radio"><span>Женщина</span></label>
                   </div>
                 </div>
@@ -57,7 +54,41 @@
                 <button type="submit" href="/">Подтвердить</button>
               </div>
             </form>
+        </div>
+    </div>
+
+    <button class="accordion">Задание 2. Почтовое сообщение</button>
+    <div class="panel">
+      <div class="testbox">
+        <form id="mail_form" action="http://myweight/mail.php" method="post">
+          <div class="banner_mail">
+            <h2>Почта</h2>
           </div>
+          <p>А где тут сувать письмо в этом вашем "компьютере", деточка?</p>
+          
+          <div class="item">
+            <label for="fname"> Имя<span>*</span></label>
+            <input id="fname" type="text" name="fname" />
+          </div>
+          <div class="item">
+            <label for="lname"> Фамилия<span>*</span></label>
+            <input id="lname" type="text" name="lname" />
+          </div>
+
+          <div class="item">
+            <label for="mymail"> Email<span>*</span></label>
+            <input id="mymail" type="text" name="mymail" />
+          </div>
+          <div class="item">
+            <label for="phone"> Номер телефона<span>*</span></label>
+            <input id="phone" type="text" name="phone" />
+          </div>
+          
+          <div class="btn-block">
+            <button type="submit" href="/">Подтвердить</button>
+          </div>
+        </form>
+    </div>
     </div>
 
     <script src="./scripts/AccordionScript.js"></script>
