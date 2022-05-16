@@ -1,15 +1,20 @@
-$('form').submit(function(){
-    // чистим ошибки
-    $(this).find('.error').remove();
-    // проверяем поля формы
-    if ($(this).find('input[name=weight]').val() == '') {
-        $(this).find('input[name=sex]')
-        return false;
-    }
-    // всё хорошо – отправляем запрос на сервер
-    $.post(
-        $(this).attr('action'), 
-            $(this).serialize() // данные формы
-    );
-    return false;
-});
+$(function() {
+    $('#weight_form').submit(function(e) {
+        
+      var $form = $(this);
+      //alert($form.serialize());
+      $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        dataType: "json",
+        success: function(data) {
+            alert($.parseJSON(data));
+        },
+        error: function(){
+            alert("Абоба");
+        }
+      })
+      e.preventDefault();
+    });
+  });

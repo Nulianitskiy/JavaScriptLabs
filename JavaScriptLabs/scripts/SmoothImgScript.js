@@ -1,10 +1,6 @@
-(function setHideEvents(el) {
-    el.onmouseover = function() {
-          this.classList.add('hidden')
-          document.getElementById('true__life').classList.add('shown')
-    }
-    el.onmouseout = function() {
-          this.classList.remove('hidden')
-          document.getElementById('true__life').classList.remove('shown')
-    }   
-  })(document.getElementById('smooth'))
+const img=document.querySelector("#logo");
+      const text=document.querySelector("#textlogo");
+      logo.addEventListener('mouseover',function(){
+        img.style.opacity = '0';})
+      logo.addEventListener('mouseout',function(){
+        img.style.opacity = '1';})

@@ -266,48 +266,28 @@ ul li {
   }
 
   /* Задание 8*/
-
-  .hidden {
-    color: transparent;
-    animation: hideBlock 10s linear forwards;
     
-  }
-
-  .hidden:hover{
-    opacity: 0;
-  }
-
-  @keyframes hideBlock {
-    100% {
-      opacity: 0;
+      
+    .task-item.eight img {
+      height: 250px;
+      position: relative;
+      z-index: 1;
+      transition: opacity 0.8s linear;
+      
     }
-    0% {
-      opacity: 1;
+    
+    .task-item.eight {
+     
+      height: 250px;
+      width: 300px;
     }
-  }
-  .shown{
-    animation: showBlock 10s linear forwards;
-  }
-  .shown:hover{
-    opacity: 0;
-  }
-
-  .true__life{
-    color:rgb(0, 0, 0);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /*ДА КАК МНЕ СДЕЛАТЬ ЭТОТ ТЕКСТ ПО СЕРЕДИНЕ ТО, А???*/
-  }
-
-@keyframes showBlock {
-    0% {
-      opacity: 0;
+    
+    .task-item.eight p {
+      position: absolute;
+      z-index: 0;
+      padding-left: 40px;
+      padding-top: 100px;
     }
-    100% {
-      opacity: 1;
-    }
-  }
 
   /* Form */
 

@@ -1,5 +1,11 @@
 $("document").ready(function(){ 
-  $(".del").click(function(){
+  $(".del1").click(function(){
+    $(this).remove();
+  });
+  $(".del2").click(function(){
+    $(this).remove();
+  });
+  $(".del3").click(function(){
     $(this).remove();
   }); 
 });
