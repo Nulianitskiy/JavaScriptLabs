@@ -88,12 +88,35 @@
             <button type="submit" href="/">Подтвердить</button>
           </div>
         </form>
+      </div>
     </div>
+
+
+    <button class="accordion">Задание 3. Получение данных JSON</button>
+    <div class="panel">
+        <div class="testbox">
+            <form id="json_form" action="goods.php" method="get">
+              <div class="banner_json">
+                <h2>Получение Json ответа</h2>
+              </div>
+              <p>Да кто этот ваш JSON?</p>
+              
+              <div class="item">
+                <label for="name">Артикул<span>*</span></label>
+                <input id="articule" type="text" name="articule" />
+              </div>
+              
+              <div class="btn-block">
+                <button type="submit">Подтвердить</button>
+              </div>
+            </form>
+        </div>
     </div>
 
     <script src="./scripts/AccordionScript.js"></script>
     <script src="./scripts/myWeight.js"></script>
-    <script src="./scripts/html-input-range.js"></script>
+    <script src="./scripts/json_get.js"></script>
     <script src="./scripts/myMail.js"></script>
+    <script src="./scripts/html-input-range.js"></script>
 </body>
 </html>

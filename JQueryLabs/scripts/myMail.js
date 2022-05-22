@@ -1,4 +1,4 @@
-$('#mail_form').submit(function(){
+$('mail_form').submit(function(){
     // чистим ошибки
     $(this).find('.error').remove();
     // проверяем поля формы

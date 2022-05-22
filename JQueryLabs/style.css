@@ -275,6 +275,25 @@ button:hover {
         height: 100%;
         }
 
+    .banner_json {
+        position: relative;
+        height: 300px;
+        background-image: url("./pictures/programmist-s-mikrovolnovkoy.jpg");  
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+        
+    .banner_json::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.2); 
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }    
+
 /* Range*/
 
     .range-wrap{

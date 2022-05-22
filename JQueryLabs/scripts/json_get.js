@@ -1,5 +1,5 @@
 $(function() {
-    $('#weight_form').submit(function(e) {
+    $('#json_form').submit(function(e) {
         
       var $form = $(this);
       //alert($form.serialize());
@@ -9,10 +9,10 @@ $(function() {
         data: $form.serialize(),
         dataType: "json",
         success: function(data) {
-            alert(data);
+            alert(`${data.name} \n ${data.weight} \n ${data.cost} \n ${data.img}`);
         },
         error: function(){
-            alert("Абоба");
+            alert(JSON.parse("Абоба"));
         }
       })
       e.preventDefault();
